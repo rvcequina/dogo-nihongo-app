@@ -374,7 +374,7 @@
         { "question": "混ぜる", "answer": "まぜる", "english_answer": "be mixed" },
         { "question": "焼く", "answer": "やく", "english_answer": "roast, grill" },
         { "question": "焼ける", "answer": "やける", "english_answer": "be burnt/baked" },
-        { "question": "表", "answer": "ひょう (in written documents)", "english_answer": "table (in written documents)" },
+        { "question": "表 (in written documents)", "answer": "ひょう", "english_answer": "table (in written documents)" },
         { "question": "表面", "answer": "ひょうめん", "english_answer": "surface" },
         { "question": "発表", "answer": "はっぴょう", "english_answer": "announcement" },
         { "question": "代表", "answer": "だいひょう", "english_answer": "representative" },
