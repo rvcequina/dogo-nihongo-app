@@ -563,7 +563,7 @@
         { "question": "乗り換え", "answer": "のりかえ", "english_answer": "changing trains" },
         { "question": "代金引換", "answer": "だいきんひきかえ", "english_answer": "cash on delivery" },
         { "question": "金額", "answer": "きんがく", "english_answer": "amount/sum (of money)" },
-        { "question": 半額"", "answer": "はんがく", "english_answer": "half price" }
+        { "question": "半額", "answer": "はんがく", "english_answer": "half price" }
     ],
     "N3D26KQuiz" : [
         { "question": "不在", "answer": "ふざい", "english_answer": "absence" },
