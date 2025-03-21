@@ -137,6 +137,27 @@
         { "question": "降る", "answer": "ふる", "english_answer": "fall" }
     ],
     "N3D7KQuiz" : [
+        { "question": "未定", "answer": "みてい", "english_answer": "undecided, indefinite" },
+        { "question": "～未満", "answer": "みまん", "english_answer": "less than" },
+        { "question": "未来", "answer": "みらい", "english_answer": "future" },
+        { "question": "週末", "answer": "しゅうまつ", "english_answer": "weekend" },
+        { "question": "年末", "answer": "ねんまつ", "english_answer": "end of the year" },
+        { "question": "月末", "answer": "げつまつ", "english_answer": "end of the month" },
+        { "question": "若い", "answer": "わかい", "english_answer": "young" },
+        { "question": "晩", "answer": "ばん", "english_answer": "night" },
+        { "question": "晩ご飯", "answer": "ばんごはん", "english_answer": "dinner" },
+        { "question": "今晩", "answer": "こんばん", "english_answer": "tonight" },
+        { "question": "毎晩", "answer": "まいばん", "english_answer": "every night" },
+        { "question": "～島", "answer": "とう", "english_answer": "~ Island" },
+        { "question": "島", "answer": "しま", "english_answer": "island" },
+        { "question": "皿", "answer": "さら", "english_answer": "plate" },
+        { "question": "灰皿", "answer": "はいざら", "english_answer": "ashtray" },
+        { "question": "出血", "answer": "しゅっけつ", "english_answer": "bleed" },
+        { "question": "血", "answer": "ち", "english_answer": "blood" },
+        { "question": "救助", "answer": "きゅうじょ", "english_answer": "rescue, help" },
+        { "question": "助ける", "answer": "たすける", "english_answer": "help" }
+    ],
+    "N3D8KQuiz" : [
         { "question": "準備", "answer": "じゅんび", "english_answer": "preparation" },
         { "question": "備える", "answer": "そなえる", "english_answer": "prepare" },
         { "question": "営業", "answer": "えいぎょう", "english_answer": "business" },
@@ -154,7 +175,7 @@
         { "question": "予約", "answer": "よやく", "english_answer": "an appointment/reservation" },
         { "question": "約～", "answer": "やく", "english_answer": "approximately" }
     ],
-    "N3D8KQuiz" : [
+    "N3D9KQuiz" : [
         { "question": "禁煙", "answer": "きんえん", "english_answer": "no smoking" },
         { "question": "煙", "answer": "けむり", "english_answer": "smoke" },
         { "question": "本当", "answer": "ほんとう", "english_answer": "the truth" },
@@ -175,7 +196,7 @@
         { "question": "協力", "answer": "きょうりょく", "english_answer": "cooperation" },
         { "question": "願う", "answer": "ねがう", "english_answer": "wish" }
     ],
-    "N3D9KQuiz" : [
+    "N3D10KQuiz" : [
         { "question": "観光", "answer": "かんこう", "english_answer": "sightseeing" },
         { "question": "観客", "answer": "かんきゃく", "english_answer": "spectator, audience" },
         { "question": "動物園", "answer": "どうぶつえん", "english_answer": "a zoo" },
@@ -196,7 +217,7 @@
         { "question": "～寺", "answer": "じ", "english_answer": "temple" },
         { "question": "お寺", "answer": "おてら", "english_answer": "a temple" }
     ],
-    "N3D10KQuiz" : [
+    "N3D11KQuiz" : [
         { "question": "市役所", "answer": "しやくしょ", "english_answer": "the city office" },
         { "question": "役員", "answer": "やくいん", "english_answer": "an officer/member" },
         { "question": "役に立つ", "answer": "やくにたつ", "english_answer": "useful" },
@@ -216,7 +237,7 @@
         { "question": "橋", "answer": "はし", "english_answer": "a bridge" },
         { "question": "公園", "answer": "こうえん", "english_answer": "a park" }
     ],
-    "N3D11KQuiz" : [
+    "N3D12KQuiz" : [
         { "question": "受信", "answer": "じゅしん", "english_answer": "receive" },
         { "question": "受ける", "answer": "うける", "english_answer": "receive" },
         { "question": "受験", "answer": "じゅけん", "english_answer": "an entrance examination" },
@@ -246,7 +267,7 @@
         { "question": "左折", "answer": "させつ", "english_answer": "a left turn" },
         { "question": "折り紙", "answer": "おりがみ", "english_answer": "Japanese art of folding paper" }
     ],
-    "N3D12KQuiz" : [
+    "N3D13KQuiz" : [
         { "question": "困る", "answer": "こまる", "english_answer": "be in trouble" },
         { "question": "消防", "answer": "しょうぼう", "english_answer": "fire fighting" },
         { "question": "消す", "answer": "けす", "english_answer": "extinguish" },
@@ -266,7 +287,7 @@
         { "question": "伝える", "answer": "つたえる", "english_answer": "convey/communicate" },
         { "question": "手伝う", "answer": "てつだう", "english_answer": "help" }
     ],
-    "N3D13KQuiz" : [
+    "N3D14KQuiz" : [
         { "question": "黄色", "answer": "きいろ", "english_answer": "yellow" },
         { "question": "黄色い", "answer": "きいろい", "english_answer": "yellow" },
         { "question": "絵画", "answer": "かいが", "english_answer": "a painting" },
@@ -285,7 +306,7 @@
         { "question": "渡す", "answer": "わたす", "english_answer": "hand over" },
         { "question": "昔", "answer": "むかし", "english_answer": "long ago, past" }
     ],
-    "N3D14KQuiz" : [
+    "N3D15KQuiz" : [
         { "question": "必要", "answer": "ひつよう", "english_answer": "necessary" },
         { "question": "要る", "answer": "いる", "english_answer": "need" },
         { "question": "重要", "answer": "じゅうよう", "english_answer": "important" },
@@ -307,7 +328,7 @@
         { "question": "必ず", "answer": "かならず", "english_answer": "always, certainly" },
         { "question": "必死", "answer": "ひっし", "english_answer": "desperate" }
     ],
-    "N3D15KQuiz" : [
+    "N3D16KQuiz" : [
         { "question": "費用", "answer": "ひよう", "english_answer": "expense, cost" },
         { "question": "消費者", "answer": "しょうひしゃ", "english_answer": "consumers" },
         { "question": "旅費", "answer": "りょひ", "english_answer": "travelling expenses" },
@@ -335,7 +356,7 @@
         { "question": "温かい", "answer": "あたたかい", "english_answer": "warm" },
         { "question": "常温", "answer": "じょうおん", "english_answer": "normal temperature" }
     ],
-    "N3D16KQuiz" : [
+    "N3D17KQuiz" : [
         { "question": "販売", "answer": "はんばい", "english_answer": "sell" },
         { "question": "自動販売機", "answer": "じどうはんばいき", "english_answer": "vending machine" },
         { "question": "飛行機", "answer": "ひこうき", "english_answer": "airplane" },
@@ -357,7 +378,7 @@
         { "question": "返す", "answer": "かえす", "english_answer": "return (something)" },
         { "question": "（お）湯", "answer": "（お）ゆ", "english_answer": "hot water" }
     ],
-    "N3D17KQuiz" : [
+    "N3D18KQuiz" : [
         { "question": "材料", "answer": "ざいりょう", "english_answer": "ingredients, materials" },
         { "question": "教材", "answer": "きょうざい", "english_answer": "teaching material" },
         { "question": "卵", "answer": "たまご", "english_answer": "egg" },
@@ -383,7 +404,7 @@
         { "question": "裏", "answer": "うら", "english_answer": "reverse, back" },
         { "question": "裏返す", "answer": "うらかえす", "english_answer": "turnover" }
     ],
-    "N3D18KQuiz" : [
+    "N3D19KQuiz" : [
         { "question": "留学", "answer": "りゅうがく", "english_answer": "study abroad" },
         { "question": "留守番", "answer": "るすばん", "english_answer": "stay at home" },
         { "question": "保留", "answer": "ほりゅう", "english_answer": "reservation, suspension" },
@@ -409,7 +430,7 @@
         { "question": "再生", "answer": "さいせい", "english_answer": "regenerate, recycle" },
         { "question": "再来週", "answer": "さらいしゅう", "english_answer": "the week after next" }
     ],
-    "N3D19KQuiz" : [
+    "N3D20KQuiz" : [
         { "question": "接続", "answer": "せつぞく", "english_answer": "connect" },
         { "question": "面接", "answer": "めんせつ", "english_answer": "interview" },
         { "question": "続く", "answer": "つづく", "english_answer": "continue" },
@@ -430,7 +451,7 @@
         { "question": "録音", "answer": "ろくおん", "english_answer": "record (sound)" },
         { "question": "録画", "answer": "ろくが", "english_answer": "record (video)" }
     ],
-    "N3D20KQuiz" : [
+    "N3D21KQuiz" : [
         { "question": "教育", "answer": "きょういく", "english_answer": "education" },
         { "question": "育てる", "answer": "そだてる", "english_answer": "raise, bring up" },
         { "question": "育つ", "answer": "そだつ", "english_answer": "grow" },
@@ -450,7 +471,7 @@
         { "question": "石油", "answer": "せきゆ", "english_answer": "oil (petroleum)" },
         { "question": "石", "answer": "いし", "english_answer": "stone" }
     ],
-    "N3D21KQuiz" : [
+    "N3D22KQuiz" : [
         { "question": "砂糖", "answer": "さとう", "english_answer": "sugar" },
         { "question": "砂", "answer": "すな", "english_answer": "sand" },
         { "question": "食塩", "answer": "しょくえん", "english_answer": "table salt" },
@@ -472,7 +493,7 @@
         { "question": "～枚", "answer": "まい", "english_answer": "counter for flat objects" },
         { "question": "枚数", "answer": "まいすう", "english_answer": "the number of sheets/copies" }
     ],
-    "N3D22KQuiz" : [
+    "N3D23KQuiz" : [
         { "question": "広告", "answer": "こうこく", "english_answer": "advertisement" },
         { "question": "便利", "answer": "べんり", "english_answer": "convenient" },
         { "question": "利用", "answer": "りよう", "english_answer": "use" },
@@ -493,7 +514,7 @@
         { "question": "払う", "answer": "はらう", "english_answer": "pay" },
         { "question": "支払い", "answer": "しはらい", "english_answer": "payment" }
     ],
-    "N3D23KQuiz" : [
+    "N3D24KQuiz" : [
         { "question": "米国", "answer": "べいこく", "english_answer": "United States of America" },
         { "question": "米", "answer": "こめ", "english_answer": "rice" },
         { "question": "高級", "answer": "こうきゅう", "english_answer": "high class/grade" },
@@ -516,7 +537,7 @@
         { "question": "合格", "answer": "ごうかく", "english_answer": "pass an exam" },
         { "question": "格安", "answer": "かくやす", "english_answer": "bargain" }
     ],
-    "N3D24KQuiz" : [
+    "N3D25KQuiz" : [
         { "question": "申し込む", "answer": "もうしこむ", "english_answer": "apply" },
         { "question": "申告", "answer": "しんこく", "english_answer": "declaration" },
         { "question": "申す", "answer": "もうす", "english_answer": "say (humble form)" },
@@ -542,7 +563,7 @@
         { "question": "連れて来る", "answer": "つれてくる", "english_answer": "bring someone to" },
         { "question": "連絡", "answer": "れんらく", "english_answer": "contact" }
     ],
-    "N3D25KQuiz" : [
+    "N3D26KQuiz" : [
         { "question": "届ける", "answer": "とどける", "english_answer": "deliver" },
         { "question": "届く", "answer": "とどく", "english_answer": "arrive (mail)" },
         { "question": "自宅", "answer": "じたく", "english_answer": "one's house/home" },
@@ -565,7 +586,7 @@
         { "question": "金額", "answer": "きんがく", "english_answer": "amount/sum (of money)" },
         { "question": "半額", "answer": "はんがく", "english_answer": "half price" }
     ],
-    "N3D26KQuiz" : [
+    "N3D27KQuiz" : [
         { "question": "不在", "answer": "ふざい", "english_answer": "absence" },
         { "question": "現在", "answer": "げんざい", "english_answer": "present (time)" },
         { "question": "取る", "answer": "とる", "english_answer": "take" },
@@ -587,7 +608,7 @@
         { "question": "帯", "answer": "おび", "english_answer": "belt, sash" },
         { "question": "時間帯", "answer": "じかんたい", "english_answer": "time zone, time slot" }
     ],
-    "N3D27KQuiz" : [
+    "N3D28KQuiz" : [
         { "question": "細い", "answer": "ほそい", "english_answer": "fine, thin" },
         { "question": "細かい", "answer": "こまかい", "english_answer": "fine, small" },
         { "question": "戸", "answer": "と", "english_answer": "door" },
