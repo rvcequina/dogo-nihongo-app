@@ -631,5 +631,26 @@
         { "question": "苦い", "answer": "にがい", "english_answer": "bitter" },
         { "question": "苦しい", "answer": "くるしい", "english_answer": "distressful, trying" },
         { "question": "苦手", "answer": "にがて", "english_answer": "weak point" }
+    ],
+    "N3D29KQuiz" : [
+        { "question": "", "answer": "", "english_answer": "" },
+    ],
+    "N3D30KQuiz" : [
+        { "question": "", "answer": "", "english_answer": "" },
+    ],
+    "N3D31KQuiz" : [
+        { "question": "", "answer": "", "english_answer": "" },
+    ],
+    "N3D32KQuiz" : [
+        { "question": "", "answer": "", "english_answer": "" },
+    ],
+    "N3D33KQuiz" : [
+        { "question": "", "answer": "", "english_answer": "" },
+    ],
+    "N3D34KQuiz" : [
+        { "question": "", "answer": "", "english_answer": "" },
+    ],
+    "N3D35KQuiz" : [
+        { "question": "", "answer": "", "english_answer": "" },
     ]
 }
