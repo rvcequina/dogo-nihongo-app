@@ -642,14 +642,14 @@
         { "question": "失敗", "answer": "しっぱい", "english_answer": "failure, mistake" },
         { "question": "失礼する", "answer": "しつれいする", "english_answer": "be excused" },
         { "question": "汗", "answer": "あせ", "english_answer": "perspiration, sweat" },
-        { "question": "汗を掻く", "answer": "あせをかく", "english_answer": "" },
-        { "question": "残念", "answer": "ざんねん", "english_answer": "" },
-        { "question": "記念", "answer": "きねん", "english_answer": "" },
-        { "question": "涙", "answer": "なみだ", "english_answer": "" },
-        { "question": "涙を流す", "answer": "なみだをながす", "english_answer": "" },
-        { "question": "笑う", "answer": "わらう", "english_answer": "" },
-        { "question": "笑顔", "answer": "えがお", "english_answer": "" },
-        { "question": "笑い", "answer": "わらい", "english_answer": "" }
+        { "question": "汗を掻く", "answer": "あせをかく", "english_answer": "sweat" },
+        { "question": "残念", "answer": "ざんねん", "english_answer": "regret, disappointment" },
+        { "question": "記念", "answer": "きねん", "english_answer": "commemoration" },
+        { "question": "涙", "answer": "なみだ", "english_answer": "tears" },
+        { "question": "涙を流す", "answer": "なみだをながす", "english_answer": "weep" },
+        { "question": "笑う", "answer": "わらう", "english_answer": "laugh, smile" },
+        { "question": "笑顔", "answer": "えがお", "english_answer": "smiling face" },
+        { "question": "笑い", "answer": "わらい", "english_answer": "laughter" }
     ],
     "N3D30KQuiz" : [
         { "question": "", "answer": "", "english_answer": "" },
