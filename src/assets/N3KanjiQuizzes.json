@@ -633,7 +633,23 @@
         { "question": "苦手", "answer": "にがて", "english_answer": "weak point" }
     ],
     "N3D29KQuiz" : [
-        { "question": "", "answer": "", "english_answer": "" },
+        { "question": "お礼", "answer": "おれい", "english_answer": "thanks" },
+        { "question": "伺う", "answer": "うかがう", "english_answer": "visit, ask (humble form)" },
+        { "question": "遅刻", "answer": "ちこく", "english_answer": "tardiness" },
+        { "question": "遅い", "answer": "おそい", "english_answer": "slow" },
+        { "question": "遅れる", "answer": "おくれる", "english_answer": "be late" },
+        { "question": "失礼", "answer": "しつれい", "english_answer": "rudeness" },
+        { "question": "失敗", "answer": "しっぱい", "english_answer": "failure, mistake" },
+        { "question": "失礼する", "answer": "しつれいする", "english_answer": "be excused" },
+        { "question": "汗", "answer": "あせ", "english_answer": "perspiration, sweat" },
+        { "question": "汗を掻く", "answer": "あせをかく", "english_answer": "" },
+        { "question": "残念", "answer": "ざんねん", "english_answer": "" },
+        { "question": "記念", "answer": "きねん", "english_answer": "" },
+        { "question": "涙", "answer": "なみだ", "english_answer": "" },
+        { "question": "涙を流す", "answer": "なみだをながす", "english_answer": "" },
+        { "question": "笑う", "answer": "わらう", "english_answer": "" },
+        { "question": "笑顔", "answer": "えがお", "english_answer": "" },
+        { "question": "笑い", "answer": "わらい", "english_answer": "" }
     ],
     "N3D30KQuiz" : [
         { "question": "", "answer": "", "english_answer": "" },
