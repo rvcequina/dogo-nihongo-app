@@ -667,7 +667,7 @@
         { "question": "単位", "answer": "たんい", "english_answer": "unit, credit" },
         { "question": "感じる", "answer": "かんじる", "english_answer": "feel" },
         { "question": "感動", "answer": "かんどう", "english_answer": "inspiration" },
-        { "question": "感想", "answer": "かんぞう", "english_answer": "impressions, thoughts" },
+        { "question": "感想", "answer": "かんそう", "english_answer": "impressions, thoughts" },
         { "question": "予想", "answer": "よそう", "english_answer": "anticipation, forecast" }
     ],
     "N3D31KQuiz" : [
