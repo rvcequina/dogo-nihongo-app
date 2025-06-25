@@ -14,6 +14,7 @@
     <div class="grid-container short">
       <QuizButton 
         :n3KanjiCodeQuizArray="n3KanjiCodeQuizArray"
+        :n3VocabularyCodeQuizArray="n3VocabularyCodeQuizArray"
         :n4KanjiCodeQuizArray="n4KanjiCodeQuizArray"
         :n4VocabularyCodeQuizArray="n4VocabularyCodeQuizArray"
         :n5KanjiCodeQuizArray="n5KanjiCodeQuizArray"
@@ -29,7 +30,7 @@
     components: {
       QuizButton
     },
-    props: ["n3KanjiCodeQuizArray", "n4KanjiCodeQuizArray", "n4VocabularyCodeQuizArray", "n5KanjiCodeQuizArray", "n5VocabularyCodeQuizArray"],
+    props: ["n3KanjiCodeQuizArray", "n3VocabularyCodeQuizArray", "n4KanjiCodeQuizArray", "n4VocabularyCodeQuizArray", "n5KanjiCodeQuizArray", "n5VocabularyCodeQuizArray"],
     emits: ["setQuiz"],
     methods: {   
         setQuiz(selectedQuiz){

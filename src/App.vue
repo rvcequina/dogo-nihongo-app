@@ -3,6 +3,7 @@
     <MenuVue 
       v-if="isQuizSelected === 0"
       :n3KanjiCodeQuizArray="n3KanjiCodeQuizArray"
+      :n3VocabularyCodeQuizArray="n3VocabularyCodeQuizArray"
       :n4KanjiCodeQuizArray="n4KanjiCodeQuizArray"
       :n4VocabularyCodeQuizArray="n4VocabularyCodeQuizArray"
       :n5KanjiCodeQuizArray="n5KanjiCodeQuizArray"
@@ -108,6 +109,7 @@
 
 <script>
 import N3KanjiQuizzes from "./assets/N3KanjiQuizzes.json";
+import N3VocabularyQuizzes from "./assets/N3VocabularyQuizzes.json";
 import N4KanjiQuizzes from "./assets/N4KanjiQuizzes.json";
 import N4VocabularyQuizzes from "./assets/N4VocabularyQuizzes.json";
 import N5KanjiQuizzes from "./assets/N5KanjiQuizzes.json";
@@ -134,6 +136,7 @@ export default {
       isQuizSelected: 0,
       isViewingAnswers: 0,
       n3KanjiCodeQuizArray: [],
+      n3VocabularyCodeQuizArray: [],
       n4KanjiCodeQuizArray: [],
       n4VocabularyCodeQuizArray: [],
       n5KanjiCodeQuizArray: [],
@@ -151,6 +154,7 @@ export default {
   },
   created() {
     this.n3KanjiCodeQuizArray = Object.keys(N3KanjiQuizzes);
+    this.n3VocabularyCodeQuizArray = Object.keys(N3VocabularyQuizzes);
     this.n4KanjiCodeQuizArray = Object.keys(N4KanjiQuizzes);
     this.n4VocabularyCodeQuizArray = Object.keys(N4VocabularyQuizzes);
     this.n5KanjiCodeQuizArray = Object.keys(N5KanjiQuizzes);
@@ -245,6 +249,9 @@ export default {
         }
         else if(selectedQuiz.search("N4") !== -1){
           this.quiz = N4VocabularyQuizzes[selectedQuiz];
+        }
+        else if(selectedQuiz.search("N3") !== -1){
+          this.quiz = N3VocabularyQuizzes[selectedQuiz];
         }
         this.typeOfQuiz = "vocabulary";
       }

@@ -398,7 +398,7 @@
         { "question": "to occupy / to hold / to rank / to account for", "kanji_question": "占める", "answer": "しめる" },
         { "question": "consumption tax", "kanji_question": "消費税", "answer": "しょうひぜい" },
         { "question": "tax", "kanji_question": "税金", "answer": "ぜいきん" },
-        { "question": "saving / to save (money, water, electricity, etc.)", "kanji_question": "節約", "answer": "せつやく" }
+        { "question": "saving / to save (money, water, electricity, etc.)", "kanji_question": "節約", "answer": "せつやく" },
         { "question": "industry", "kanji_question": "業界", "answer": "ぎょうかい" }
     ],
     "N3L7VQuiz": [
@@ -595,7 +595,7 @@
         { "question": "to decide", "kanji_question": "決まる", "answer": "きまる" },
         { "question": "to decide (something)", "kanji_question": "決める", "answer": "きめる" },
         { "question": "all the members", "kanji_question": "全員", "answer": "ぜんいん" },
-        { "question": "sudden / unexpected / suddenly / unexpectedly", "kanji_question": "突然", "answer": "とつぜん" }
+        { "question": "sudden / unexpected / suddenly / unexpectedly", "kanji_question": "突然", "answer": "とつぜん" },
         { "question": "bachelor / unmarried", "kanji_question": "独身", "answer": "どくしん" }
     ],
     "N3L10VQuiz": [
