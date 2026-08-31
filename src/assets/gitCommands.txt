@@ -1,1 +1,0 @@
-git add dist -f && git commit -m "updated dist" && git subtree push --prefix dist github gh-pages
