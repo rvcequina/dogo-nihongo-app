@@ -61,7 +61,7 @@ export default function LoginPage() {
               <div className="mb-2 flex items-center justify-between"><span className="text-[10px] font-semibold text-[#39324a]">Password</span><a href="#forgot-password" className="text-[9px] font-semibold text-[#c11963] hover:underline">Forgot password?</a></div>
               <span className="flex h-11 items-center gap-3 rounded-full border border-[#eeeaf6] bg-white px-4 shadow-[0_5px_14px_-12px_rgba(69,48,100,0.6)] transition-colors focus-within:border-[#c11963]"><RiLock2Line className="size-4 shrink-0 text-[#bcb3c8]" /><input type="password" placeholder="••••••••" className="min-w-0 flex-1 bg-transparent text-xs text-[#302942] outline-none placeholder:text-[#c9c2d1]" /></span>
             </div>
-            <Button type="submit" className="h-11 w-full rounded-full bg-gradient-to-r from-[#be1c63] to-[#ff5794] text-[10px] font-bold uppercase tracking-[0.12em] shadow-[0_12px_18px_-11px_#be1c63] hover:opacity-90">Continue to dojo <RiArrowRightLine /></Button>
+            <Link href="/kana" className="inline-flex h-11 w-full items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-[#be1c63] to-[#ff5794] text-[10px] font-bold uppercase tracking-[0.12em] text-white shadow-[0_12px_18px_-11px_#be1c63] transition-all hover:opacity-90">Continue to dojo <RiArrowRightLine className="size-4" /></Link>
           </form>
 
           <div className="my-6 flex items-center gap-3"><span className="h-px flex-1 bg-[#ded8eb]" /><span className="text-[8px] font-semibold uppercase tracking-[0.16em] text-[#aaa0b6]">or connect with</span><span className="h-px flex-1 bg-[#ded8eb]" /></div>
@@ -71,7 +71,7 @@ export default function LoginPage() {
           </div>
         </div>
 
-        <p className="mt-6 text-[10px] text-[#8b8194]">Don&apos;t have an account? <Link href="/pages/auth/register" className="font-bold text-[#c11963] hover:underline">Sign up for free</Link></p>
+        <p className="mt-6 text-[10px] text-[#8b8194]">Don&apos;t have an account? <Link href="/auth/register" className="font-bold text-[#c11963] hover:underline">Sign up for free</Link></p>
       </section>
 
       <footer className="flex justify-center gap-6 px-6 pb-8 text-[9px] font-medium uppercase tracking-[0.14em] text-[#aaa0b4]"><a href="#privacy" className="hover:text-[#c11963]">Privacy</a><a href="#terms" className="hover:text-[#c11963]">Terms</a></footer>

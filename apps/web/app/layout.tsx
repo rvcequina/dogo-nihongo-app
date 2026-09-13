@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono, Roboto } from "next/font/google"
 
-import "./css/main.css"
+import "@/css/main.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@workspace/ui/lib/utils";
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      
+
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", roboto.variable)}
     >

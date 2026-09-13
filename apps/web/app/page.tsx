@@ -44,15 +44,15 @@ export default function Page() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#fbf9ff] text-[#171329]">
       <nav className="mx-auto flex w-full max-w-[80vw] items-center justify-between px-6 py-6 lg:px-10">
-        <a href="#top" className="text-sm font-bold tracking-[-0.04em] text-[#c11963]">Mochi Modern</a>
-        <div className="hidden items-center gap-8 text-[11px] font-medium text-[#706b7f] sm:flex">
-          {navItems.map((item) => (
+        <a href="#top" className="text-base font-bold tracking-[-0.04em] text-[#c11963]">Mochi Modern</a>
+        <div className="hidden items-center gap-8 text-sm font-medium text-[#706b7f] sm:flex">
+          {navItems.filter((item): item is string => Boolean(item)).map((item) => (
             <a key={item} href={`#${item.toLowerCase().replace(" ", "-")}`} className="transition-colors hover:text-[#c11963]">{item}</a>
           ))}
         </div>
         <div className="flex items-center gap-3">
-          <Link href="/pages/auth/login" className="hidden text-[11px] font-semibold text-[#706b7f] transition-colors hover:text-[#c11963] sm:block">Log in</Link>
-          <Link href="/pages/auth/register" className="inline-flex h-7 items-center justify-center rounded-full bg-[#be1c63] px-4 text-[11px] font-medium text-white shadow-[0_8px_18px_-10px_#be1c63] transition-colors hover:bg-[#a91657]">Join Dojo</Link>
+          <Link href="/auth/login" className="hidden text-sm font-semibold text-[#706b7f] transition-colors hover:text-[#c11963] sm:block">Log in</Link>
+          <Link href="/auth/register" className="inline-flex h-8 items-center justify-center rounded-full bg-[#be1c63] px-4 text-sm font-medium text-white shadow-[0_8px_18px_-10px_#be1c63] transition-colors hover:bg-[#a91657]">Join Dojo</Link>
           <Button variant="ghost" size="icon-sm" className="sm:hidden" aria-label="Open menu"><RiMenuLine /></Button>
         </div>
       </nav>
