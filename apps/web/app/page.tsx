@@ -14,9 +14,9 @@ import {
 } from "@remixicon/react"
 import Link from "next/link"
 
-import { HeroVisual } from "@/components/hero-visual"
-import { Placeholder } from "@/components/placeholder"
-import { SlideIn } from "@/components/slide-in"
+import { HeroVisual } from "@/app/components/hero-visual"
+import { Placeholder } from "@/app/components/placeholder"
+import { SlideIn } from "@/app/components/slide-in"
 import { Button } from "@workspace/ui/components/button"
 
 const navItems = ["Lessons", "Kanji", "Vocabulary", "Practice", "Community", "About"]
