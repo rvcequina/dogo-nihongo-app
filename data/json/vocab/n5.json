@@ -198,24 +198,6 @@
     "examples": []
   },
   {
-    "word": "「どうも」ありがとうございました",
-    "reading": "「どうも」ありがとうございました",
-    "meanings": [
-      "Thank you very much."
-    ],
-    "level": "N5",
-    "examples": []
-  },
-  {
-    "word": "「どうも」すみません",
-    "reading": "「どうも」すみません",
-    "meanings": [
-      "Thank you."
-    ],
-    "level": "N5",
-    "examples": []
-  },
-  {
     "word": "「にほんに」います",
     "reading": "「にほんに」います",
     "meanings": [
@@ -718,15 +700,6 @@
     "reading": "ついたち",
     "meanings": [
       "first day of the month"
-    ],
-    "level": "N5",
-    "examples": []
-  },
-  {
-    "word": "２，３～",
-    "reading": "２，３～",
-    "meanings": [
-      "two or three ~ (where ~ is a counter suffix)"
     ],
     "level": "N5",
     "examples": []
@@ -20509,6 +20482,15 @@
     "reading": "どうぞおげんきで。",
     "meanings": [
       "Best of luck."
+    ],
+    "level": "N5",
+    "examples": []
+  },
+  {
+    "word": "一月",
+    "reading": "いちがつ",
+    "meanings": [
+      "January"
     ],
     "level": "N5",
     "examples": []

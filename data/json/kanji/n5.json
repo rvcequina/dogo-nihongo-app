@@ -6,19 +6,20 @@
     "grade": 1,
     "freq": 1,
     "onyomi": [
-      "ニチ",
-      "ジツ"
+      "にち",
+      "じつ"
     ],
     "kunyomi": [
       "ひ",
-      "-び",
-      "-か"
+      "び",
+      "か"
     ],
     "meanings": [
       "day",
       "sun",
       "Japan",
-      "counter for days"
+      "counter for days",
+      "the sun"
     ]
   },
   {
@@ -28,12 +29,12 @@
     "grade": 1,
     "freq": 2,
     "onyomi": [
-      "イチ",
-      "イツ"
+      "いち",
+      "いつ"
     ],
     "kunyomi": [
-      "ひと-",
-      "ひと.つ"
+      "ひと",
+      "ひとつ"
     ],
     "meanings": [
       "one",
@@ -47,13 +48,14 @@
     "grade": 2,
     "freq": 3,
     "onyomi": [
-      "コク"
+      "こく"
     ],
     "kunyomi": [
       "くに"
     ],
     "meanings": [
-      "country"
+      "country",
+      "country, nation"
     ]
   },
   {
@@ -63,13 +65,13 @@
     "grade": 1,
     "freq": 5,
     "onyomi": [
-      "ジン",
-      "ニン"
+      "じん",
+      "にん"
     ],
     "kunyomi": [
       "ひと",
-      "-り",
-      "-と"
+      "り",
+      "と"
     ],
     "meanings": [
       "person"
@@ -82,14 +84,15 @@
     "grade": 1,
     "freq": 6,
     "onyomi": [
-      "ネン"
+      "ねん"
     ],
     "kunyomi": [
       "とし"
     ],
     "meanings": [
       "year",
-      "counter for years"
+      "counter for years",
+      "year, age"
     ]
   },
   {
@@ -99,13 +102,13 @@
     "grade": 1,
     "freq": 7,
     "onyomi": [
-      "ダイ",
-      "タイ"
+      "だい",
+      "たい"
     ],
     "kunyomi": [
-      "おお-",
-      "おお.きい",
-      "-おお.いに"
+      "おお",
+      "おおきい",
+      "おおいに"
     ],
     "meanings": [
       "large",
@@ -119,9 +122,9 @@
     "grade": 1,
     "freq": 8,
     "onyomi": [
-      "ジュウ",
-      "ジッ",
-      "ジュッ"
+      "じゅう",
+      "じっ",
+      "じゅっ"
     ],
     "kunyomi": [
       "とお",
@@ -139,12 +142,12 @@
     "grade": 1,
     "freq": 9,
     "onyomi": [
-      "ニ",
-      "ジ"
+      "に",
+      "じ"
     ],
     "kunyomi": [
       "ふた",
-      "ふた.つ",
+      "ふたつ",
       "ふたたび"
     ],
     "meanings": [
@@ -159,7 +162,7 @@
     "grade": 1,
     "freq": 10,
     "onyomi": [
-      "ホン"
+      "ほん"
     ],
     "kunyomi": [
       "もと"
@@ -181,12 +184,12 @@
     "grade": 1,
     "freq": 11,
     "onyomi": [
-      "チュウ"
+      "ちゅう"
     ],
     "kunyomi": [
       "なか",
       "うち",
-      "あた.る"
+      "あたる"
     ],
     "meanings": [
       "in",
@@ -203,10 +206,10 @@
     "grade": 2,
     "freq": 12,
     "onyomi": [
-      "チョウ"
+      "ちょう"
     ],
     "kunyomi": [
-      "なが.い",
+      "ながい",
       "おさ"
     ],
     "meanings": [
@@ -223,16 +226,16 @@
     "grade": 1,
     "freq": 13,
     "onyomi": [
-      "シュツ",
-      "スイ"
+      "しゅつ",
+      "すい"
     ],
     "kunyomi": [
-      "で.る",
-      "-で",
-      "だ.す",
-      "-だ.す",
-      "い.でる",
-      "い.だす"
+      "でる",
+      "で",
+      "だす",
+      "だす",
+      "いでる",
+      "いだす"
     ],
     "meanings": [
       "exit",
@@ -250,13 +253,13 @@
     "grade": 1,
     "freq": 14,
     "onyomi": [
-      "サン",
-      "ゾウ"
+      "さん",
+      "ぞう"
     ],
     "kunyomi": [
       "み",
-      "み.つ",
-      "みっ.つ"
+      "みつ",
+      "みっつ"
     ],
     "meanings": [
       "three"
@@ -269,15 +272,16 @@
     "grade": 2,
     "freq": 16,
     "onyomi": [
-      "ジ"
+      "じ"
     ],
     "kunyomi": [
       "とき",
-      "-どき"
+      "どき"
     ],
     "meanings": [
       "time",
-      "hour"
+      "hour",
+      "time, when"
     ]
   },
   {
@@ -287,19 +291,19 @@
     "grade": 2,
     "freq": 20,
     "onyomi": [
-      "コウ",
-      "ギョウ",
-      "アン"
+      "こう",
+      "ぎょう",
+      "あん"
     ],
     "kunyomi": [
-      "い.く",
-      "ゆ.く",
-      "-ゆ.き",
-      "-ゆき",
-      "-い.き",
-      "-いき",
-      "おこな.う",
-      "おこ.なう"
+      "いく",
+      "ゆく",
+      "ゆき",
+      "ゆき",
+      "いき",
+      "いき",
+      "おこなう",
+      "おこなう"
     ],
     "meanings": [
       "going",
@@ -319,12 +323,12 @@
     "grade": 1,
     "freq": 22,
     "onyomi": [
-      "ケン"
+      "けん"
     ],
     "kunyomi": [
-      "み.る",
-      "み.える",
-      "み.せる"
+      "みる",
+      "みえる",
+      "みせる"
     ],
     "meanings": [
       "see",
@@ -343,15 +347,16 @@
     "grade": 1,
     "freq": 23,
     "onyomi": [
-      "ゲツ",
-      "ガツ"
+      "げつ",
+      "がつ"
     ],
     "kunyomi": [
       "つき"
     ],
     "meanings": [
       "month",
-      "moon"
+      "moon",
+      "the moon"
     ]
   },
   {
@@ -361,20 +366,21 @@
     "grade": 2,
     "freq": 26,
     "onyomi": [
-      "ゴ",
-      "コウ"
+      "ご",
+      "こう"
     ],
     "kunyomi": [
       "のち",
-      "うし.ろ",
+      "うしろ",
       "うしろ",
       "あと",
-      "おく.れる"
+      "おくれる"
     ],
     "meanings": [
       "behind",
       "back",
-      "later"
+      "later",
+      "after, later"
     ]
   },
   {
@@ -384,15 +390,16 @@
     "grade": 2,
     "freq": 27,
     "onyomi": [
-      "ゼン"
+      "ぜん"
     ],
     "kunyomi": [
       "まえ",
-      "-まえ"
+      "まえ"
     ],
     "meanings": [
       "in front",
-      "before"
+      "before",
+      "the front"
     ]
   },
   {
@@ -402,28 +409,28 @@
     "grade": 1,
     "freq": 29,
     "onyomi": [
-      "セイ",
-      "ショウ"
+      "せい",
+      "しょう"
     ],
     "kunyomi": [
-      "い.きる",
-      "い.かす",
-      "い.ける",
-      "う.まれる",
-      "うま.れる",
-      "う.まれ",
+      "いきる",
+      "いかす",
+      "いける",
+      "うまれる",
+      "うまれる",
       "うまれ",
-      "う.む",
-      "お.う",
-      "は.える",
-      "は.やす",
+      "うまれ",
+      "うむ",
+      "おう",
+      "はえる",
+      "はやす",
       "き",
       "なま",
-      "なま-",
-      "な.る",
-      "な.す",
-      "む.す",
-      "-う"
+      "なま",
+      "なる",
+      "なす",
+      "むす",
+      "う"
     ],
     "meanings": [
       "life",
@@ -438,11 +445,11 @@
     "grade": 1,
     "freq": 31,
     "onyomi": [
-      "ゴ"
+      "ご"
     ],
     "kunyomi": [
       "いつ",
-      "いつ.つ"
+      "いつつ"
     ],
     "meanings": [
       "five"
@@ -455,8 +462,8 @@
     "grade": 2,
     "freq": 33,
     "onyomi": [
-      "カン",
-      "ケン"
+      "かん",
+      "けん"
     ],
     "kunyomi": [
       "あいだ",
@@ -465,7 +472,8 @@
     ],
     "meanings": [
       "interval",
-      "space"
+      "space",
+      "between"
     ]
   },
   {
@@ -475,30 +483,31 @@
     "grade": 1,
     "freq": 35,
     "onyomi": [
-      "ジョウ",
-      "ショウ",
-      "シャン"
+      "じょう",
+      "しょう",
+      "しゃん"
     ],
     "kunyomi": [
       "うえ",
-      "-うえ",
-      "うわ-",
+      "うえ",
+      "うわ",
       "かみ",
-      "あ.げる",
-      "-あ.げる",
-      "あ.がる",
-      "-あ.がる",
-      "あ.がり",
-      "-あ.がり",
-      "のぼ.る",
-      "のぼ.り",
-      "のぼ.せる",
-      "のぼ.す",
-      "たてまつ.る"
+      "あげる",
+      "あげる",
+      "あがる",
+      "あがる",
+      "あがり",
+      "あがり",
+      "のぼる",
+      "のぼり",
+      "のぼせる",
+      "のぼす",
+      "たてまつる"
     ],
     "meanings": [
       "above",
-      "up"
+      "up",
+      "above, on"
     ]
   },
   {
@@ -508,7 +517,7 @@
     "grade": 2,
     "freq": 37,
     "onyomi": [
-      "トウ"
+      "とう"
     ],
     "kunyomi": [
       "ひがし"
@@ -524,12 +533,12 @@
     "grade": 1,
     "freq": 47,
     "onyomi": [
-      "シ"
+      "し"
     ],
     "kunyomi": [
       "よ",
-      "よ.つ",
-      "よっ.つ",
+      "よつ",
+      "よっつ",
       "よん"
     ],
     "meanings": [
@@ -543,8 +552,8 @@
     "grade": 2,
     "freq": 49,
     "onyomi": [
-      "コン",
-      "キン"
+      "こん",
+      "きん"
     ],
     "kunyomi": [
       "いま"
@@ -560,14 +569,14 @@
     "grade": 1,
     "freq": 53,
     "onyomi": [
-      "キン",
-      "コン",
-      "ゴン"
+      "きん",
+      "こん",
+      "ごん"
     ],
     "kunyomi": [
       "かね",
-      "かな-",
-      "-がね"
+      "かな",
+      "がね"
     ],
     "meanings": [
       "gold"
@@ -580,12 +589,12 @@
     "grade": 1,
     "freq": 55,
     "onyomi": [
-      "キュウ",
-      "ク"
+      "きゅう",
+      "く"
     ],
     "kunyomi": [
       "ここの",
-      "ここの.つ"
+      "ここのつ"
     ],
     "meanings": [
       "nine"
@@ -598,16 +607,16 @@
     "grade": 1,
     "freq": 56,
     "onyomi": [
-      "ニュウ",
-      "ジュ"
+      "にゅう",
+      "じゅ"
     ],
     "kunyomi": [
-      "い.る",
-      "-い.る",
-      "-い.り",
-      "い.れる",
-      "-い.れ",
-      "はい.る"
+      "いる",
+      "いる",
+      "いり",
+      "いれる",
+      "いれ",
+      "はいる"
     ],
     "meanings": [
       "enter",
@@ -621,10 +630,10 @@
     "grade": 1,
     "freq": 63,
     "onyomi": [
-      "ガク"
+      "がく"
     ],
     "kunyomi": [
-      "まな.ぶ"
+      "まなぶ"
     ],
     "meanings": [
       "study",
@@ -639,14 +648,14 @@
     "grade": 2,
     "freq": 65,
     "onyomi": [
-      "コウ"
+      "こう"
     ],
     "kunyomi": [
-      "たか.い",
+      "たかい",
       "たか",
-      "-だか",
-      "たか.まる",
-      "たか.める"
+      "だか",
+      "たかまる",
+      "たかめる"
     ],
     "meanings": [
       "tall",
@@ -661,19 +670,20 @@
     "grade": 1,
     "freq": 69,
     "onyomi": [
-      "エン"
+      "えん"
     ],
     "kunyomi": [
-      "まる.い",
+      "まるい",
       "まる",
       "まど",
-      "まど.か",
-      "まろ.やか"
+      "まどか",
+      "まろやか"
     ],
     "meanings": [
       "circle",
       "yen",
-      "round"
+      "round",
+      "yen, circle"
     ]
   },
   {
@@ -683,13 +693,13 @@
     "grade": 1,
     "freq": 72,
     "onyomi": [
-      "シ",
-      "ス",
-      "ツ"
+      "し",
+      "す",
+      "つ"
     ],
     "kunyomi": [
       "こ",
-      "-こ",
+      "こ",
       "ね"
     ],
     "meanings": [
@@ -706,15 +716,15 @@
     "grade": 2,
     "freq": 81,
     "onyomi": [
-      "ガイ",
-      "ゲ"
+      "がい",
+      "げ"
     ],
     "kunyomi": [
       "そと",
       "ほか",
-      "はず.す",
-      "はず.れる",
-      "と-"
+      "はずす",
+      "はずれる",
+      "と"
     ],
     "meanings": [
       "outside"
@@ -727,13 +737,13 @@
     "grade": 1,
     "freq": 92,
     "onyomi": [
-      "ハチ",
-      "ハツ"
+      "はち",
+      "はつ"
     ],
     "kunyomi": [
       "や",
-      "や.つ",
-      "やっ.つ",
+      "やつ",
+      "やっつ",
       "よう"
     ],
     "meanings": [
@@ -748,13 +758,13 @@
     "grade": 1,
     "freq": 93,
     "onyomi": [
-      "ロク",
-      "リク"
+      "ろく",
+      "りく"
     ],
     "kunyomi": [
       "む",
-      "む.つ",
-      "むっ.つ",
+      "むつ",
+      "むっつ",
       "むい"
     ],
     "meanings": [
@@ -768,22 +778,22 @@
     "grade": 1,
     "freq": 97,
     "onyomi": [
-      "カ",
-      "ゲ"
+      "か",
+      "げ"
     ],
     "kunyomi": [
       "した",
       "しも",
       "もと",
-      "さ.げる",
-      "さ.がる",
-      "くだ.る",
-      "くだ.り",
-      "くだ.す",
-      "-くだ.す",
-      "くだ.さる",
-      "お.ろす",
-      "お.りる"
+      "さげる",
+      "さがる",
+      "くだる",
+      "くだり",
+      "くだす",
+      "くだす",
+      "くださる",
+      "おろす",
+      "おりる"
     ],
     "meanings": [
       "below",
@@ -791,7 +801,8 @@
       "descend",
       "give",
       "low",
-      "inferior"
+      "inferior",
+      "under"
     ]
   },
   {
@@ -801,15 +812,15 @@
     "grade": 2,
     "freq": 102,
     "onyomi": [
-      "ライ",
-      "タイ"
+      "らい",
+      "たい"
     ],
     "kunyomi": [
-      "く.る",
-      "きた.る",
-      "きた.す",
-      "き.たす",
-      "き.たる",
+      "くる",
+      "きたる",
+      "きたす",
+      "きたす",
+      "きたる",
       "き",
       "こ"
     ],
@@ -828,8 +839,8 @@
     "grade": 1,
     "freq": 113,
     "onyomi": [
-      "キ",
-      "ケ"
+      "き",
+      "け"
     ],
     "kunyomi": [
       "いき",
@@ -850,13 +861,13 @@
     "grade": 1,
     "freq": 114,
     "onyomi": [
-      "ショウ"
+      "しょう"
     ],
     "kunyomi": [
-      "ちい.さい",
-      "こ-",
-      "お-",
-      "さ-"
+      "ちいさい",
+      "こ",
+      "お",
+      "さ"
     ],
     "meanings": [
       "little",
@@ -870,11 +881,11 @@
     "grade": 1,
     "freq": 115,
     "onyomi": [
-      "シチ"
+      "しち"
     ],
     "kunyomi": [
       "なな",
-      "なな.つ",
+      "ななつ",
       "なの"
     ],
     "meanings": [
@@ -888,8 +899,8 @@
     "grade": 1,
     "freq": 131,
     "onyomi": [
-      "サン",
-      "セン"
+      "さん",
+      "せん"
     ],
     "kunyomi": [
       "やま"
@@ -905,15 +916,16 @@
     "grade": 2,
     "freq": 134,
     "onyomi": [
-      "ワ"
+      "わ"
     ],
     "kunyomi": [
-      "はな.す",
+      "はなす",
       "はなし"
     ],
     "meanings": [
       "tale",
-      "talk"
+      "talk",
+      "story"
     ]
   },
   {
@@ -923,9 +935,9 @@
     "grade": 1,
     "freq": 151,
     "onyomi": [
-      "ジョ",
-      "ニョ",
-      "ニョウ"
+      "じょ",
+      "にょ",
+      "にょう"
     ],
     "kunyomi": [
       "おんな",
@@ -943,7 +955,7 @@
     "grade": 2,
     "freq": 153,
     "onyomi": [
-      "ホク"
+      "ほく"
     ],
     "kunyomi": [
       "きた"
@@ -959,7 +971,7 @@
     "grade": 2,
     "freq": 154,
     "onyomi": [
-      "ゴ"
+      "ご"
     ],
     "kunyomi": [
       "うま"
@@ -978,14 +990,15 @@
     "grade": 1,
     "freq": 163,
     "onyomi": [
-      "ヒャク",
-      "ビャク"
+      "ひゃく",
+      "びゃく"
     ],
     "kunyomi": [
       "もも"
     ],
     "meanings": [
-      "hundred"
+      "hundred",
+      "100"
     ]
   },
   {
@@ -995,12 +1008,12 @@
     "grade": 2,
     "freq": 169,
     "onyomi": [
-      "ショ"
+      "しょ"
     ],
     "kunyomi": [
-      "か.く",
-      "-が.き",
-      "-がき"
+      "かく",
+      "がき",
+      "がき"
     ],
     "meanings": [
       "write"
@@ -1013,18 +1026,19 @@
     "grade": 1,
     "freq": 173,
     "onyomi": [
-      "セン"
+      "せん"
     ],
     "kunyomi": [
       "さき",
-      "ま.ず"
+      "まず"
     ],
     "meanings": [
       "before",
       "ahead",
       "previous",
       "future",
-      "precedence"
+      "precedence",
+      "future, ahead"
     ]
   },
   {
@@ -1034,12 +1048,12 @@
     "grade": 1,
     "freq": 177,
     "onyomi": [
-      "メイ",
-      "ミョウ"
+      "めい",
+      "みょう"
     ],
     "kunyomi": [
       "な",
-      "-な"
+      "な"
     ],
     "meanings": [
       "name",
@@ -1055,7 +1069,7 @@
     "grade": 1,
     "freq": 181,
     "onyomi": [
-      "セン"
+      "せん"
     ],
     "kunyomi": [
       "かわ"
@@ -1073,13 +1087,14 @@
     "grade": 1,
     "freq": 195,
     "onyomi": [
-      "セン"
+      "せん"
     ],
     "kunyomi": [
       "ち"
     ],
     "meanings": [
-      "thousand"
+      "thousand",
+      "1000"
     ]
   },
   {
@@ -1089,11 +1104,11 @@
     "grade": 1,
     "freq": 223,
     "onyomi": [
-      "スイ"
+      "すい"
     ],
     "kunyomi": [
       "みず",
-      "みず-"
+      "みず"
     ],
     "meanings": [
       "water"
@@ -1106,10 +1121,10 @@
     "grade": 2,
     "freq": 224,
     "onyomi": [
-      "ハン"
+      "はん"
     ],
     "kunyomi": [
-      "なか.ば"
+      "なかば"
     ],
     "meanings": [
       "half",
@@ -1126,8 +1141,8 @@
     "grade": 1,
     "freq": 240,
     "onyomi": [
-      "ダン",
-      "ナン"
+      "だん",
+      "なん"
     ],
     "kunyomi": [
       "おとこ",
@@ -1144,9 +1159,9 @@
     "grade": 2,
     "freq": 259,
     "onyomi": [
-      "セイ",
-      "サイ",
-      "ス"
+      "せい",
+      "さい",
+      "す"
     ],
     "kunyomi": [
       "にし"
@@ -1163,7 +1178,7 @@
     "grade": 2,
     "freq": 268,
     "onyomi": [
-      "デン"
+      "でん"
     ],
     "kunyomi": [],
     "meanings": [
@@ -1177,8 +1192,8 @@
     "grade": 1,
     "freq": 294,
     "onyomi": [
-      "コウ",
-      "キョウ"
+      "こう",
+      "きょう"
     ],
     "kunyomi": [],
     "meanings": [
@@ -1196,11 +1211,11 @@
     "grade": 2,
     "freq": 301,
     "onyomi": [
-      "ゴ"
+      "ご"
     ],
     "kunyomi": [
-      "かた.る",
-      "かた.らう"
+      "かたる",
+      "かたらう"
     ],
     "meanings": [
       "word",
@@ -1215,8 +1230,8 @@
     "grade": 1,
     "freq": 307,
     "onyomi": [
-      "ド",
-      "ト"
+      "ど",
+      "と"
     ],
     "kunyomi": [
       "つち"
@@ -1225,7 +1240,8 @@
       "soil",
       "earth",
       "ground",
-      "Turkey"
+      "Turkey",
+      "soil, earth"
     ]
   },
   {
@@ -1235,12 +1251,12 @@
     "grade": 1,
     "freq": 317,
     "onyomi": [
-      "ボク",
-      "モク"
+      "ぼく",
+      "もく"
     ],
     "kunyomi": [
       "き",
-      "こ-"
+      "こ"
     ],
     "meanings": [
       "tree",
@@ -1254,12 +1270,12 @@
     "grade": 2,
     "freq": 319,
     "onyomi": [
-      "ブン",
-      "モン"
+      "ぶん",
+      "もん"
     ],
     "kunyomi": [
-      "き.く",
-      "き.こえる"
+      "きく",
+      "きこえる"
     ],
     "meanings": [
       "hear",
@@ -1274,14 +1290,14 @@
     "grade": 2,
     "freq": 328,
     "onyomi": [
-      "ショク",
-      "ジキ"
+      "しょく",
+      "じき"
     ],
     "kunyomi": [
-      "く.う",
-      "く.らう",
-      "た.べる",
-      "は.む"
+      "くう",
+      "くらう",
+      "たべる",
+      "はむ"
     ],
     "meanings": [
       "eat",
@@ -1295,7 +1311,7 @@
     "grade": 1,
     "freq": 333,
     "onyomi": [
-      "シャ"
+      "しゃ"
     ],
     "kunyomi": [
       "くるま"
@@ -1311,13 +1327,13 @@
     "grade": 2,
     "freq": 340,
     "onyomi": [
-      "カ"
+      "か"
     ],
     "kunyomi": [
       "なに",
       "なん",
-      "なに-",
-      "なん-"
+      "なに",
+      "なん"
     ],
     "meanings": [
       "what"
@@ -1330,8 +1346,8 @@
     "grade": 2,
     "freq": 341,
     "onyomi": [
-      "ナン",
-      "ナ"
+      "なん",
+      "な"
     ],
     "kunyomi": [
       "みなみ"
@@ -1347,15 +1363,16 @@
     "grade": 2,
     "freq": 375,
     "onyomi": [
-      "マン",
-      "バン"
+      "まん",
+      "ばん"
     ],
     "kunyomi": [
       "よろず"
     ],
     "meanings": [
       "ten thousand",
-      "10,000"
+      "10,000",
+      "10000"
     ]
   },
   {
@@ -1365,11 +1382,11 @@
     "grade": 2,
     "freq": 436,
     "onyomi": [
-      "マイ"
+      "まい"
     ],
     "kunyomi": [
       "ごと",
-      "-ごと.に"
+      "ごとに"
     ],
     "meanings": [
       "every"
@@ -1382,13 +1399,13 @@
     "grade": 1,
     "freq": 483,
     "onyomi": [
-      "ハク",
-      "ビャク"
+      "はく",
+      "びゃく"
     ],
     "kunyomi": [
       "しろ",
-      "しら-",
-      "しろ.い"
+      "しら",
+      "しろい"
     ],
     "meanings": [
       "white"
@@ -1401,17 +1418,18 @@
     "grade": 1,
     "freq": 512,
     "onyomi": [
-      "テン"
+      "てん"
     ],
     "kunyomi": [
       "あまつ",
       "あめ",
-      "あま-"
+      "あま"
     ],
     "meanings": [
       "heavens",
       "sky",
-      "imperial"
+      "imperial",
+      "heaven"
     ]
   },
   {
@@ -1421,7 +1439,7 @@
     "grade": 2,
     "freq": 570,
     "onyomi": [
-      "ボ"
+      "ぼ"
     ],
     "kunyomi": [
       "はは",
@@ -1438,12 +1456,12 @@
     "grade": 1,
     "freq": 574,
     "onyomi": [
-      "カ"
+      "か"
     ],
     "kunyomi": [
       "ひ",
-      "-び",
-      "ほ-"
+      "び",
+      "ほ"
     ],
     "meanings": [
       "fire"
@@ -1456,8 +1474,8 @@
     "grade": 1,
     "freq": 602,
     "onyomi": [
-      "ウ",
-      "ユウ"
+      "う",
+      "ゆう"
     ],
     "kunyomi": [
       "みぎ"
@@ -1473,13 +1491,13 @@
     "grade": 2,
     "freq": 618,
     "onyomi": [
-      "ドク",
-      "トク",
-      "トウ"
+      "どく",
+      "とく",
+      "とう"
     ],
     "kunyomi": [
-      "よ.む",
-      "-よ.み"
+      "よむ",
+      "よみ"
     ],
     "meanings": [
       "read"
@@ -1492,7 +1510,7 @@
     "grade": 2,
     "freq": 622,
     "onyomi": [
-      "ユウ"
+      "ゆう"
     ],
     "kunyomi": [
       "とも"
@@ -1508,8 +1526,8 @@
     "grade": 1,
     "freq": 630,
     "onyomi": [
-      "サ",
-      "シャ"
+      "さ",
+      "しゃ"
     ],
     "kunyomi": [
       "ひだり"
@@ -1525,12 +1543,12 @@
     "grade": 1,
     "freq": 642,
     "onyomi": [
-      "キュウ"
+      "きゅう"
     ],
     "kunyomi": [
-      "やす.む",
-      "やす.まる",
-      "やす.める"
+      "やすむ",
+      "やすまる",
+      "やすめる"
     ],
     "meanings": [
       "rest",
@@ -1546,7 +1564,7 @@
     "grade": 2,
     "freq": 646,
     "onyomi": [
-      "フ"
+      "ふ"
     ],
     "kunyomi": [
       "ちち"
@@ -1562,15 +1580,342 @@
     "grade": 1,
     "freq": 950,
     "onyomi": [
-      "ウ"
+      "う"
     ],
     "kunyomi": [
       "あめ",
-      "あま-",
-      "-さめ"
+      "あま",
+      "さめ"
     ],
     "meanings": [
       "rain"
+    ]
+  },
+  {
+    "character": "田",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq": 90,
+    "onyomi": [
+      "でん"
+    ],
+    "kunyomi": [
+      "た"
+    ],
+    "meanings": [
+      "rice field",
+      "rice paddy"
+    ]
+  },
+  {
+    "character": "目",
+    "level": "N5",
+    "strokes": 5,
+    "grade": 1,
+    "freq": 76,
+    "onyomi": [
+      "もく",
+      "ぼく"
+    ],
+    "kunyomi": [
+      "め",
+      "め",
+      "ま"
+    ],
+    "meanings": [
+      "eye",
+      "class",
+      "look",
+      "insight",
+      "experience",
+      "care",
+      "favor"
+    ]
+  },
+  {
+    "character": "口",
+    "level": "N5",
+    "strokes": 3,
+    "grade": 1,
+    "freq": 284,
+    "onyomi": [
+      "こう",
+      "く"
+    ],
+    "kunyomi": [
+      "くち"
+    ],
+    "meanings": [
+      "mouth"
+    ]
+  },
+  {
+    "character": "耳",
+    "level": "N5",
+    "strokes": 6,
+    "grade": 1,
+    "freq": 1328,
+    "onyomi": [
+      "じ"
+    ],
+    "kunyomi": [
+      "みみ"
+    ],
+    "meanings": [
+      "ear"
+    ]
+  },
+  {
+    "character": "手",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 1,
+    "freq": 60,
+    "onyomi": [
+      "しゅ",
+      "ず"
+    ],
+    "kunyomi": [
+      "て",
+      "て",
+      "て",
+      "た"
+    ],
+    "meanings": [
+      "hand"
+    ]
+  },
+  {
+    "character": "足",
+    "level": "N5",
+    "strokes": 7,
+    "grade": 1,
+    "freq": 343,
+    "onyomi": [
+      "そく"
+    ],
+    "kunyomi": [
+      "あし",
+      "たりる",
+      "たる",
+      "たす"
+    ],
+    "meanings": [
+      "leg",
+      "foot",
+      "be sufficient",
+      "counter for pairs of footwear"
+    ]
+  },
+  {
+    "character": "力",
+    "level": "N5",
+    "strokes": 2,
+    "grade": 1,
+    "freq": 62,
+    "onyomi": [
+      "りょく",
+      "りき",
+      "りい"
+    ],
+    "kunyomi": [
+      "ちから"
+    ],
+    "meanings": [
+      "power",
+      "strength",
+      "strong",
+      "strain",
+      "bear up",
+      "exert"
+    ]
+  },
+  {
+    "character": "牛",
+    "level": "N5",
+    "strokes": 4,
+    "grade": 2,
+    "freq": 1202,
+    "onyomi": [
+      "ぎゅう"
+    ],
+    "kunyomi": [
+      "うし"
+    ],
+    "meanings": [
+      "cow"
+    ]
+  },
+  {
+    "character": "馬",
+    "level": "N5",
+    "strokes": 10,
+    "grade": 2,
+    "freq": 639,
+    "onyomi": [
+      "ば"
+    ],
+    "kunyomi": [
+      "うま",
+      "うま",
+      "ま"
+    ],
+    "meanings": [
+      "horse"
+    ]
+  },
+  {
+    "character": "魚",
+    "level": "N5",
+    "strokes": 11,
+    "grade": 2,
+    "freq": 1208,
+    "onyomi": [
+      "ぎょ"
+    ],
+    "kunyomi": [
+      "うお",
+      "さかな",
+      "ざかな"
+    ],
+    "meanings": [
+      "fish"
+    ]
+  },
+  {
+    "character": "貝",
+    "level": "N5",
+    "strokes": 7,
+    "grade": 1,
+    "freq": 1787,
+    "onyomi": [
+      "ばい"
+    ],
+    "kunyomi": [
+      "かい"
+    ],
+    "meanings": [
+      "shellfish"
+    ]
+  },
+  {
+    "character": "門",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 2,
+    "freq": 452,
+    "onyomi": [
+      "もん"
+    ],
+    "kunyomi": [
+      "かど",
+      "と"
+    ],
+    "meanings": [
+      "gate",
+      "counter for cannons"
+    ]
+  },
+  {
+    "character": "道",
+    "level": "N5",
+    "strokes": 12,
+    "grade": 2,
+    "freq": 207,
+    "onyomi": [
+      "どう",
+      "とう"
+    ],
+    "kunyomi": [
+      "みち",
+      "いう"
+    ],
+    "meanings": [
+      "road-way",
+      "street",
+      "district",
+      "journey",
+      "course",
+      "moral",
+      "teachings",
+      "street, road, way"
+    ]
+  },
+  {
+    "character": "店",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 2,
+    "freq": 378,
+    "onyomi": [
+      "てん"
+    ],
+    "kunyomi": [
+      "みせ",
+      "たな"
+    ],
+    "meanings": [
+      "store",
+      "shop"
+    ]
+  },
+  {
+    "character": "駅",
+    "level": "N5",
+    "strokes": 14,
+    "grade": 3,
+    "freq": 724,
+    "onyomi": [
+      "えき"
+    ],
+    "kunyomi": [],
+    "meanings": [
+      "station"
+    ]
+  },
+  {
+    "character": "花",
+    "level": "N5",
+    "strokes": 7,
+    "grade": 1,
+    "freq": 578,
+    "onyomi": [
+      "か",
+      "け"
+    ],
+    "kunyomi": [
+      "はな"
+    ],
+    "meanings": [
+      "flower"
+    ]
+  },
+  {
+    "character": "空",
+    "level": "N5",
+    "strokes": 8,
+    "grade": 1,
+    "freq": 304,
+    "onyomi": [
+      "くう"
+    ],
+    "kunyomi": [
+      "そら",
+      "あく",
+      "あき",
+      "あける",
+      "から",
+      "すく",
+      "すかす",
+      "むなしい"
+    ],
+    "meanings": [
+      "empty",
+      "sky",
+      "void",
+      "vacant",
+      "vacuum"
     ]
   }
 ]

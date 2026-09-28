@@ -12,6 +12,7 @@ import {
   RiSettings3Line,
 } from "@remixicon/react";
 import { DojoSidebar } from "@/components/dojo-sidebar";
+import { convertRomajiToKana } from "@/lib/romaji-to-kana";
 import n1Vocabulary from "../../../../data/json/vocab/n1.json";
 import n2Vocabulary from "../../../../data/json/vocab/n2.json";
 import n3Vocabulary from "../../../../data/json/vocab/n3.json";
@@ -22,6 +23,7 @@ type VocabularyItem = {
   question: string;
   kanji_question: string;
   answer: string;
+  examples?: { ja: string; en: string }[];
   level?: string;
   lesson?: string;
 };
@@ -31,139 +33,13 @@ type VocabularyRecord = {
   reading: string;
   meanings: string[];
   level: string;
+  examples?: { ja: string; en: string }[];
 };
 const fallbackItem: VocabularyItem = {
   question: "Japanese word",
   kanji_question: "",
   answer: "にほんご",
 };
-
-const japaneseSyllables: Record<string, string> = {
-  kya: "きゃ",
-  kyu: "きゅ",
-  kyo: "きょ",
-  sha: "しゃ",
-  shu: "しゅ",
-  sho: "しょ",
-  cha: "ちゃ",
-  chu: "ちゅ",
-  cho: "ちょ",
-  nya: "にゃ",
-  nyu: "にゅ",
-  nyo: "にょ",
-  hya: "ひゃ",
-  hyu: "ひゅ",
-  hyo: "ひょ",
-  mya: "みゃ",
-  myu: "みゅ",
-  myo: "みょ",
-  rya: "りゃ",
-  ryu: "りゅ",
-  ryo: "りょ",
-  gya: "ぎゃ",
-  gyu: "ぎゅ",
-  gyo: "ぎょ",
-  ja: "じゃ",
-  ju: "じゅ",
-  jo: "じょ",
-  bya: "びゃ",
-  byu: "びゅ",
-  byo: "びょ",
-  pya: "ぴゃ",
-  pyu: "ぴゅ",
-  pyo: "ぴょ",
-  shi: "し",
-  chi: "ち",
-  tsu: "つ",
-  fu: "ふ",
-  ka: "か",
-  ki: "き",
-  ku: "く",
-  ke: "け",
-  ko: "こ",
-  sa: "さ",
-  su: "す",
-  se: "せ",
-  so: "そ",
-  ta: "た",
-  te: "て",
-  to: "と",
-  na: "な",
-  ni: "に",
-  nu: "ぬ",
-  ne: "ね",
-  no: "の",
-  ha: "は",
-  hi: "ひ",
-  he: "へ",
-  ho: "ほ",
-  ma: "ま",
-  mi: "み",
-  mu: "む",
-  me: "め",
-  mo: "も",
-  ya: "や",
-  yu: "ゆ",
-  yo: "よ",
-  ra: "ら",
-  ri: "り",
-  ru: "る",
-  re: "れ",
-  ro: "ろ",
-  wa: "わ",
-  wo: "を",
-  nn: "ん",
-  n: "ん",
-  a: "あ",
-  i: "い",
-  u: "う",
-  e: "え",
-  o: "お",
-  ga: "が",
-  gi: "ぎ",
-  gu: "ぐ",
-  ge: "げ",
-  go: "ご",
-  za: "ざ",
-  ji: "じ",
-  zu: "ず",
-  ze: "ぜ",
-  zo: "ぞ",
-  da: "だ",
-  di: "ぢ",
-  du: "づ",
-  de: "で",
-  do: "ど",
-  ba: "ば",
-  bi: "び",
-  bu: "ぶ",
-  be: "べ",
-  bo: "ぼ",
-  pa: "ぱ",
-  pi: "ぴ",
-  pu: "ぷ",
-  pe: "ぺ",
-  po: "ぽ",
-};
-const romajiKeys = Object.keys(japaneseSyllables).sort(
-  (left, right) => right.length - left.length,
-);
-
-function romajiToJapanese(value: string) {
-  let result = "";
-  let remaining = value.toLowerCase().replace(/[^a-z]/g, "");
-  while (remaining) {
-    const match = romajiKeys.find((key) => remaining.startsWith(key));
-    if (!match) {
-      result += remaining[0];
-      remaining = remaining.slice(1);
-      continue;
-    }
-    result += japaneseSyllables[match];
-    remaining = remaining.slice(match.length);
-  }
-  return result;
-}
 
 function normalizeAnswer(value: string) {
   return value.replace(/[~～\s]/g, "").trim();
@@ -208,6 +84,7 @@ function groupVocabulary(
     question: item.meanings.join("; "),
     kanji_question: item.word,
     answer: item.reading || item.word,
+    examples: item.examples,
     level,
     lesson: `Set ${Math.floor(index / setSize) + 1}`,
   }));
@@ -243,7 +120,8 @@ export default function VocabularyPage() {
   const currentLesson = lessons[lessonIndex] ?? lessons[0];
   const items = currentLesson?.items ?? [fallbackItem];
   const item = items[itemIndex % items.length] ?? fallbackItem;
-  const typedJapanese = useMemo(() => romajiToJapanese(answer), [answer]);
+  const mnemonicExample = item.examples?.[0];
+  const typedJapanese = useMemo(() => convertRomajiToKana(answer), [answer]);
   const progress = Math.round(((itemIndex + 1) / items.length) * 100);
 
   function changeLevel(nextLevel: VocabularyLevel) {
@@ -479,23 +357,29 @@ export default function VocabularyPage() {
                       </div>
                       <div>
                         <p className="text-xs font-bold text-[#3c3156]">
-                          The mnemonic
+                          Memory scene
                         </p>
                         <p className="text-[10px] text-[#8c8198]">
-                          Make it memorable
+                          Connect the word to its meaning
                         </p>
                       </div>
                     </div>
-                    <p className={`mt-7 text-sm leading-6 text-[#5c506b] transition-[filter] duration-300 ${checked === "correct" ? "" : "blur-sm"}`}>
-                      Connect{" "}
-                      <span className="font-bold text-[#7433df]">
-                        {item.answer}
-                      </span>{" "}
-                      to its meaning through a small story. Recall becomes
-                      easier when the word has a place in your imagination.
-                    </p>
-                    <div className={`mt-6 flex h-28 items-center justify-center rounded-2xl bg-white/70 text-5xl font-black text-[#c11963] transition-[filter] duration-300 ${checked === "correct" ? "" : "blur-sm"}`}>
-                      {item.kanji_question || item.answer.slice(0, 1)}
+                    <div className={`mt-7 transition-[filter] duration-300 ${checked === "correct" ? "" : "blur-sm"}`}>
+                      {mnemonicExample ? (
+                        <div className="rounded-2xl bg-white/75 p-4">
+                          <p className="text-[9px] font-bold uppercase tracking-[0.14em] text-[#8c8198]">Imagine this moment</p>
+                          <p lang="ja" className="mt-2 text-base font-bold leading-7 text-[#302942]">{mnemonicExample.ja}</p>
+                          <p className="mt-1 text-xs leading-5 text-[#766b84]">{mnemonicExample.en}</p>
+                        </div>
+                      ) : (
+                        <p className="rounded-2xl bg-white/75 p-4 text-sm leading-6 text-[#5c506b]">
+                          Picture <span className="font-bold text-[#7433d8]">{item.kanji_question || item.answer}</span> in a moment that means <span className="font-bold">{item.question}</span>.
+                        </p>
+                      )}
+                      <div className="mt-4 flex min-h-28 flex-col items-center justify-center rounded-2xl bg-white/70 p-4 text-center">
+                        <span lang="ja" className="text-4xl font-black text-[#c11963]">{item.kanji_question || item.answer}</span>
+                        <span className="mt-1 text-xs font-semibold text-[#766b84]">{item.answer} · {item.question}</span>
+                      </div>
                     </div>
                   </div>
                   <div className="rounded-3xl bg-[#f1edff] p-7 sm:p-8">
