@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { RiArrowRightLine, RiBookOpenLine } from "@remixicon/react"
-import { DojoSidebar } from "@/app/components/dojo-sidebar"
+import { DojoSidebar } from "@/components/dojo-sidebar"
 
 type PageScaffoldProps = {
   active: string

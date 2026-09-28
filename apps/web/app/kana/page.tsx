@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import kanaData from "../../../../json-data/KanaQuizzes.json"
 import {
 	RiBookOpenLine,
 	RiCheckLine,
@@ -21,154 +22,26 @@ type KanaQuestion = {
 	romaji: string
 }
 
-const hiragana: KanaQuestion[] = [
-	{ kana: "あ", romaji: "a" },
-	{ kana: "い", romaji: "i" },
-	{ kana: "う", romaji: "u" },
-	{ kana: "え", romaji: "e" },
-	{ kana: "お", romaji: "o" },
-	{ kana: "か", romaji: "ka" },
-	{ kana: "き", romaji: "ki" },
-	{ kana: "く", romaji: "ku" },
-	{ kana: "け", romaji: "ke" },
-	{ kana: "こ", romaji: "ko" },
-	{ kana: "さ", romaji: "sa" },
-	{ kana: "し", romaji: "shi" },
-	{ kana: "す", romaji: "su" },
-	{ kana: "せ", romaji: "se" },
-	{ kana: "そ", romaji: "so" },
-	{ kana: "た", romaji: "ta" },
-	{ kana: "ち", romaji: "chi" },
-	{ kana: "つ", romaji: "tsu" },
-	{ kana: "て", romaji: "te" },
-	{ kana: "と", romaji: "to" },
-	{ kana: "な", romaji: "na" },
-	{ kana: "に", romaji: "ni" },
-	{ kana: "ぬ", romaji: "nu" },
-	{ kana: "ね", romaji: "ne" },
-	{ kana: "の", romaji: "no" },
-	{ kana: "は", romaji: "ha" },
-	{ kana: "ひ", romaji: "hi" },
-	{ kana: "ふ", romaji: "fu" },
-	{ kana: "へ", romaji: "he" },
-	{ kana: "ほ", romaji: "ho" },
-	{ kana: "ま", romaji: "ma" },
-	{ kana: "み", romaji: "mi" },
-	{ kana: "む", romaji: "mu" },
-	{ kana: "め", romaji: "me" },
-	{ kana: "も", romaji: "mo" },
-	{ kana: "や", romaji: "ya" },
-	{ kana: "ゆ", romaji: "yu" },
-	{ kana: "よ", romaji: "yo" },
-	{ kana: "ら", romaji: "ra" },
-	{ kana: "り", romaji: "ri" },
-	{ kana: "る", romaji: "ru" },
-	{ kana: "れ", romaji: "re" },
-	{ kana: "ろ", romaji: "ro" },
-	{ kana: "わ", romaji: "wa" },
-	{ kana: "を", romaji: "wo" },
-	{ kana: "ん", romaji: "n" },
-]
+const hiragana: KanaQuestion[] = kanaData.hiragana
+const katakana: KanaQuestion[] = kanaData.katakana
+const dakuten: KanaQuestion[] = kanaData.dakuten
+const combination: KanaQuestion[] = kanaData.combination
+const allKana: KanaQuestion[] = [...hiragana, ...katakana, ...dakuten, ...combination]
 
-const katakana: KanaQuestion[] = [
-	{ kana: "ア", romaji: "a" },
-	{ kana: "イ", romaji: "i" },
-	{ kana: "ウ", romaji: "u" },
-	{ kana: "エ", romaji: "e" },
-	{ kana: "オ", romaji: "o" },
-	{ kana: "カ", romaji: "ka" },
-	{ kana: "キ", romaji: "ki" },
-	{ kana: "ク", romaji: "ku" },
-	{ kana: "ケ", romaji: "ke" },
-	{ kana: "コ", romaji: "ko" },
-	{ kana: "サ", romaji: "sa" },
-	{ kana: "シ", romaji: "shi" },
-	{ kana: "ス", romaji: "su" },
-	{ kana: "セ", romaji: "se" },
-	{ kana: "ソ", romaji: "so" },
-	{ kana: "タ", romaji: "ta" },
-	{ kana: "チ", romaji: "chi" },
-	{ kana: "ツ", romaji: "tsu" },
-	{ kana: "テ", romaji: "te" },
-	{ kana: "ト", romaji: "to" },
-	{ kana: "ナ", romaji: "na" },
-	{ kana: "ニ", romaji: "ni" },
-	{ kana: "ヌ", romaji: "nu" },
-	{ kana: "ネ", romaji: "ne" },
-	{ kana: "ノ", romaji: "no" },
-	{ kana: "ハ", romaji: "ha" },
-	{ kana: "ヒ", romaji: "hi" },
-	{ kana: "フ", romaji: "fu" },
-	{ kana: "ヘ", romaji: "he" },
-	{ kana: "ホ", romaji: "ho" },
-	{ kana: "マ", romaji: "ma" },
-	{ kana: "ミ", romaji: "mi" },
-	{ kana: "ム", romaji: "mu" },
-	{ kana: "メ", romaji: "me" },
-	{ kana: "モ", romaji: "mo" },
-	{ kana: "ヤ", romaji: "ya" },
-	{ kana: "ユ", romaji: "yu" },
-	{ kana: "ヨ", romaji: "yo" },
-	{ kana: "ラ", romaji: "ra" },
-	{ kana: "リ", romaji: "ri" },
-	{ kana: "ル", romaji: "ru" },
-	{ kana: "レ", romaji: "re" },
-	{ kana: "ロ", romaji: "ro" },
-	{ kana: "ワ", romaji: "wa" },
-	{ kana: "ヲ", romaji: "wo" },
-	{ kana: "ン", romaji: "n" },
-]
-
-const dakuten: KanaQuestion[] = [
-	{ kana: "が", romaji: "ga" }, { kana: "ぎ", romaji: "gi" }, { kana: "ぐ", romaji: "gu" }, { kana: "げ", romaji: "ge" }, { kana: "ご", romaji: "go" },
-	{ kana: "ざ", romaji: "za" }, { kana: "じ", romaji: "ji" }, { kana: "ず", romaji: "zu" }, { kana: "ぜ", romaji: "ze" }, { kana: "ぞ", romaji: "zo" },
-	{ kana: "だ", romaji: "da" }, { kana: "ぢ", romaji: "ji" }, { kana: "づ", romaji: "zu" }, { kana: "で", romaji: "de" }, { kana: "ど", romaji: "do" },
-	{ kana: "ば", romaji: "ba" }, { kana: "び", romaji: "bi" }, { kana: "ぶ", romaji: "bu" }, { kana: "べ", romaji: "be" }, { kana: "ぼ", romaji: "bo" },
-	{ kana: "ぱ", romaji: "pa" }, { kana: "ぴ", romaji: "pi" }, { kana: "ぷ", romaji: "pu" }, { kana: "ぺ", romaji: "pe" }, { kana: "ぽ", romaji: "po" },
-	{ kana: "ガ", romaji: "ga" }, { kana: "ギ", romaji: "gi" }, { kana: "グ", romaji: "gu" }, { kana: "ゲ", romaji: "ge" }, { kana: "ゴ", romaji: "go" },
-	{ kana: "ザ", romaji: "za" }, { kana: "ジ", romaji: "ji" }, { kana: "ズ", romaji: "zu" }, { kana: "ゼ", romaji: "ze" }, { kana: "ゾ", romaji: "zo" },
-	{ kana: "ダ", romaji: "da" }, { kana: "ヂ", romaji: "ji" }, { kana: "ヅ", romaji: "zu" }, { kana: "デ", romaji: "de" }, { kana: "ド", romaji: "do" },
-	{ kana: "バ", romaji: "ba" }, { kana: "ビ", romaji: "bi" }, { kana: "ブ", romaji: "bu" }, { kana: "ベ", romaji: "be" }, { kana: "ボ", romaji: "bo" },
-	{ kana: "パ", romaji: "pa" }, { kana: "ピ", romaji: "pi" }, { kana: "プ", romaji: "pu" }, { kana: "ペ", romaji: "pe" }, { kana: "ポ", romaji: "po" },
-]
-
-const combination: KanaQuestion[] = [
-	{ kana: "きゃ", romaji: "kya" }, { kana: "きゅ", romaji: "kyu" }, { kana: "きょ", romaji: "kyo" },
-	{ kana: "しゃ", romaji: "sha" }, { kana: "しゅ", romaji: "shu" }, { kana: "しょ", romaji: "sho" },
-	{ kana: "ちゃ", romaji: "cha" }, { kana: "ちゅ", romaji: "chu" }, { kana: "ちょ", romaji: "cho" },
-	{ kana: "にゃ", romaji: "nya" }, { kana: "にゅ", romaji: "nyu" }, { kana: "にょ", romaji: "nyo" },
-	{ kana: "ひゃ", romaji: "hya" }, { kana: "ひゅ", romaji: "hyu" }, { kana: "ひょ", romaji: "hyo" },
-	{ kana: "みゃ", romaji: "mya" }, { kana: "みゅ", romaji: "myu" }, { kana: "みょ", romaji: "myo" },
-	{ kana: "りゃ", romaji: "rya" }, { kana: "りゅ", romaji: "ryu" }, { kana: "りょ", romaji: "ryo" },
-	{ kana: "ぎゃ", romaji: "gya" }, { kana: "ぎゅ", romaji: "gyu" }, { kana: "ぎょ", romaji: "gyo" },
-	{ kana: "じゃ", romaji: "ja" }, { kana: "じゅ", romaji: "ju" }, { kana: "じょ", romaji: "jo" },
-	{ kana: "びゃ", romaji: "bya" }, { kana: "びゅ", romaji: "byu" }, { kana: "びょ", romaji: "byo" },
-	{ kana: "ぴゃ", romaji: "pya" }, { kana: "ぴゅ", romaji: "pyu" }, { kana: "ぴょ", romaji: "pyo" },
-	{ kana: "キャ", romaji: "kya" }, { kana: "キュ", romaji: "kyu" }, { kana: "キョ", romaji: "kyo" },
-	{ kana: "シャ", romaji: "sha" }, { kana: "シュ", romaji: "shu" }, { kana: "ショ", romaji: "sho" },
-	{ kana: "チャ", romaji: "cha" }, { kana: "チュ", romaji: "chu" }, { kana: "チョ", romaji: "cho" },
-	{ kana: "ニャ", romaji: "nya" }, { kana: "ニュ", romaji: "nyu" }, { kana: "ニョ", romaji: "nyo" },
-	{ kana: "ヒャ", romaji: "hya" }, { kana: "ヒュ", romaji: "hyu" }, { kana: "ヒョ", romaji: "hyo" },
-	{ kana: "ミャ", romaji: "mya" }, { kana: "ミュ", romaji: "myu" }, { kana: "ミョ", romaji: "myo" },
-	{ kana: "リャ", romaji: "rya" }, { kana: "リュ", romaji: "ryu" }, { kana: "リョ", romaji: "ryo" },
-	{ kana: "ギャ", romaji: "gya" }, { kana: "ギュ", romaji: "gyu" }, { kana: "ギョ", romaji: "gyo" },
-	{ kana: "ジャ", romaji: "ja" }, { kana: "ジュ", romaji: "ju" }, { kana: "ジョ", romaji: "jo" },
-	{ kana: "ビャ", romaji: "bya" }, { kana: "ビュ", romaji: "byu" }, { kana: "ビョ", romaji: "byo" },
-	{ kana: "ピャ", romaji: "pya" }, { kana: "ピュ", romaji: "pyu" }, { kana: "ピョ", romaji: "pyo" },
-]
-
-const allKana = [...hiragana, ...katakana, ...dakuten, ...combination]
+function shuffledQuestions(pool: KanaQuestion[]) {
+	return [...pool].sort(() => Math.random() - 0.5)
+}
 
 const quizGroups = [
-	{ label: "Hiragana", detail: "ひらがな", data: hiragana },
-	{ label: "Katakana", detail: "カタカナ", data: katakana },
-	{ label: "Dakuten Kana", detail: "゛ ゜", data: dakuten },
-	{ label: "Combination Kana", detail: "きゃ · キャ", data: combination },
-	{ label: "All Kana", detail: "全部", data: allKana },
+	{ label: "Hiragana", detail: "ひらがな", data: shuffledQuestions(hiragana) },
+	{ label: "Katakana", detail: "カタカナ", data: shuffledQuestions(katakana) },
+	{ label: "Dakuten Kana", detail: "゛ ゜", data: shuffledQuestions(dakuten) },
+	{ label: "Combination Kana", detail: "きゃ · キャ", data: shuffledQuestions(combination) },
+	{ label: "All Kana", detail: "全部", data: shuffledQuestions(allKana) },
 ]
 
-const fallbackGroup = quizGroups[0] ?? { label: "Hiragana", detail: "ひらがな", data: hiragana }
-const initialQuestion = hiragana[0] ?? { kana: "あ", romaji: "a" }
+const fallbackGroup = quizGroups[4] ?? { label: "All Kana", detail: "全部", data: allKana }
+const initialQuestion = shuffledQuestions(allKana)[0] ?? { kana: "あ", romaji: "a" }
 
 const sidebarItems = [
 	{ label: "Overview", href: "/", icon: RiHome4Line },
@@ -186,7 +59,7 @@ function nextQuestion(current: KanaQuestion, pool: KanaQuestion[], masteredKana:
 }
 
 export default function KanaPage() {
-	const [groupIndex, setGroupIndex] = useState(0)
+	const [groupIndex, setGroupIndex] = useState(4)
 	const [question, setQuestion] = useState(initialQuestion)
 	const [answer, setAnswer] = useState("")
 	const [feedback, setFeedback] = useState<"correct" | "retry" | "incorrect" | null>(null)
@@ -211,7 +84,7 @@ export default function KanaPage() {
 	function chooseGroup(index: number) {
 		const selectedGroup = quizGroups[index] ?? fallbackGroup
 		setGroupIndex(index)
-		setQuestion(selectedGroup.data[0] ?? initialQuestion)
+		setQuestion(shuffledQuestions(selectedGroup.data)[0] ?? initialQuestion)
 		setAnswer("")
 		setFeedback(null)
 		setQuestionAttempts(0)
@@ -308,7 +181,7 @@ export default function KanaPage() {
 					<section className="mx-auto max-w-5xl px-5 py-8 sm:px-8 sm:py-12 lg:px-12">
 						<div className="mb-9 flex flex-wrap items-end justify-between gap-4">
 							<div><p className="mb-3 text-[10px] font-bold uppercase tracking-[0.2em] text-[#c11963]">Kana practice</p><h1 className="text-3xl font-black tracking-[-0.07em] text-[#302942] sm:text-5xl">Kana Quiz</h1><p className="mt-3 max-w-md text-sm leading-6 text-[#8c8198]">Build instant recognition with short, focused rounds.</p></div>
-							  <button type="button" onClick={() => { setScore(0); setAttempts(0); setQuestion(currentGroup.data[0] ?? initialQuestion); setAnswer(""); setFeedback(null); setQuestionAttempts(0); setMasteredKana(new Set()); setCompletionOpen(false); setCompletionReason(null); setToast("Session reset.") }} className="inline-flex items-center gap-2 rounded-full border border-[#e7dfef] bg-white px-4 py-2 text-xs font-bold text-[#786d86] transition-colors hover:border-[#c11963] hover:text-[#c11963]"><RiRefreshLine className="size-4" />Reset session</button>
+							  <button type="button" onClick={() => { setScore(0); setAttempts(0); setQuestion(shuffledQuestions(currentGroup.data)[0] ?? initialQuestion); setAnswer(""); setFeedback(null); setQuestionAttempts(0); setMasteredKana(new Set()); setCompletionOpen(false); setCompletionReason(null); setToast("Session reset.") }} className="inline-flex items-center gap-2 rounded-full border border-[#e7dfef] bg-white px-4 py-2 text-xs font-bold text-[#786d86] transition-colors hover:border-[#c11963] hover:text-[#c11963]"><RiRefreshLine className="size-4" />Reset session</button>
 						</div>
 
 						<div className="mb-7 grid gap-3 sm:grid-cols-2">

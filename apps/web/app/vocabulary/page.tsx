@@ -11,10 +11,12 @@ import {
   RiMenuLine,
   RiSettings3Line,
 } from "@remixicon/react";
-import { DojoSidebar } from "@/app/components/dojo-sidebar";
-import n4Vocabulary from "../../../../json-data/N4VocabularyQuizzes.json";
-import n3Vocabulary from "../../../../json-data/N3VocabularyQuizzes.json";
-import n5Vocabulary from "../../../../json-data/N5VocabularyQuizzes.json";
+import { DojoSidebar } from "@/components/dojo-sidebar";
+import n1Vocabulary from "../../../../data/json/vocab/n1.json";
+import n2Vocabulary from "../../../../data/json/vocab/n2.json";
+import n3Vocabulary from "../../../../data/json/vocab/n3.json";
+import n4Vocabulary from "../../../../data/json/vocab/n4.json";
+import n5Vocabulary from "../../../../data/json/vocab/n5.json";
 
 type VocabularyItem = {
   question: string;
@@ -23,7 +25,13 @@ type VocabularyItem = {
   level?: string;
   lesson?: string;
 };
-type VocabularyLevel = "N5" | "N4" | "N3";
+type VocabularyLevel = "N5" | "N4" | "N3" | "N2" | "N1";
+type VocabularyRecord = {
+  word: string;
+  reading: string;
+  meanings: string[];
+  level: string;
+};
 const fallbackItem: VocabularyItem = {
   question: "Japanese word",
   kanji_question: "",
@@ -167,29 +175,22 @@ function escapePattern(value: string) {
 
 function answerMatches(value: string, expected: string) {
   const normalizedValue = normalizeAnswer(value);
-  const normalizedExpected = expected.replace(/[~～\s]/g, "");
-  let pattern = "";
-  let cursor = 0;
+  return expected.split(/[/／、]/).some((alternative) => {
+    const normalizedExpected = alternative.replace(/[~～\s]/g, "");
+    let pattern = "";
+    let cursor = 0;
 
-  for (const match of normalizedExpected.matchAll(/「([^」]*)」/g)) {
-    const start = match.index ?? 0;
-    const optionalText = match[1] ?? "";
-    pattern += escapePattern(normalizedExpected.slice(cursor, start));
-    pattern += `(?:${escapePattern(optionalText)})?`;
-    cursor = start + match[0].length;
-  }
+    for (const match of normalizedExpected.matchAll(/「([^」]*)」/g)) {
+      const start = match.index ?? 0;
+      const optionalText = match[1] ?? "";
+      pattern += escapePattern(normalizedExpected.slice(cursor, start));
+      pattern += `(?:${escapePattern(optionalText)})?`;
+      cursor = start + match[0].length;
+    }
 
-  pattern += escapePattern(normalizedExpected.slice(cursor).replace(/[「」]/g, ""));
-  return new RegExp(`^${pattern}$`).test(normalizedValue);
-}
-
-function flattenVocabulary(
-  source: Record<string, VocabularyItem[]>,
-  level: VocabularyLevel,
-) {
-  return Object.entries(source).flatMap(([lesson, items]) =>
-    items.map((item) => ({ ...item, level, lesson })),
-  );
+    pattern += escapePattern(normalizedExpected.slice(cursor).replace(/[「」]/g, ""));
+    return new RegExp(`^${pattern}$`).test(normalizedValue);
+  });
 }
 
 type VocabularyLesson = {
@@ -199,19 +200,32 @@ type VocabularyLesson = {
 };
 
 function groupVocabulary(
-  source: Record<string, VocabularyItem[]>,
+  source: VocabularyRecord[],
   level: VocabularyLevel,
+  setSize = 30,
 ) {
-  return Object.entries(source).map(([key, lessonItems], index) => ({
-    key,
-    label: `Lesson ${index + 1}`,
-    items: flattenVocabulary({ [key]: lessonItems }, level),
+  const items = source.map((item, index) => ({
+    question: item.meanings.join("; "),
+    kanji_question: item.word,
+    answer: item.reading || item.word,
+    level,
+    lesson: `Set ${Math.floor(index / setSize) + 1}`,
+  }));
+  return Array.from({ length: Math.ceil(items.length / setSize) }, (_, index) => ({
+    key: `${level}-${index + 1}`,
+    label: `Set ${index + 1}`,
+    items: items.slice(index * setSize, (index + 1) * setSize),
   } satisfies VocabularyLesson));
 }
 
-const n5Lessons = groupVocabulary(n5Vocabulary as Record<string, VocabularyItem[]>, "N5");
-const n4Lessons = groupVocabulary(n4Vocabulary as Record<string, VocabularyItem[]>, "N4");
-const n3Lessons = groupVocabulary(n3Vocabulary as Record<string, VocabularyItem[]>, "N3");
+const vocabularySets: Record<VocabularyLevel, VocabularyLesson[]> = {
+  N5: groupVocabulary(n5Vocabulary as VocabularyRecord[], "N5"),
+  N4: groupVocabulary(n4Vocabulary as VocabularyRecord[], "N4"),
+  N3: groupVocabulary(n3Vocabulary as VocabularyRecord[], "N3"),
+  N2: groupVocabulary(n2Vocabulary as VocabularyRecord[], "N2"),
+  N1: groupVocabulary(n1Vocabulary as VocabularyRecord[], "N1"),
+};
+
 export default function VocabularyPage() {
   const [level, setLevel] = useState<VocabularyLevel>("N5");
   const [lessonIndex, setLessonIndex] = useState(0);
@@ -225,14 +239,12 @@ export default function VocabularyPage() {
   const [masteredWords, setMasteredWords] = useState<Set<string>>(new Set());
   const [hasStartedQuiz, setHasStartedQuiz] = useState(false);
   const [reviewOpen, setReviewOpen] = useState(false);
-  const lessons = level === "N5" ? n5Lessons : level === "N4" ? n4Lessons : n3Lessons;
+  const lessons = vocabularySets[level];
   const currentLesson = lessons[lessonIndex] ?? lessons[0];
   const items = currentLesson?.items ?? [fallbackItem];
   const item = items[itemIndex % items.length] ?? fallbackItem;
   const typedJapanese = useMemo(() => romajiToJapanese(answer), [answer]);
-  const progress = Math.round(
-    ((itemIndex + 1) / Math.min(items.length, 20)) * 100,
-  );
+  const progress = Math.round(((itemIndex + 1) / items.length) * 100);
 
   function changeLevel(nextLevel: VocabularyLevel) {
     setLevel(nextLevel);
@@ -339,27 +351,17 @@ export default function VocabularyPage() {
                   </p>
                 </div>
                 <div className="flex items-center gap-2 rounded-full bg-white p-1 shadow-sm">
-                  <button
-                    type="button"
-                    onClick={() => changeLevel("N5")}
-                    className={`rounded-full px-4 py-2 text-[10px] font-bold ${level === "N5" ? "bg-[#9333d8] text-white" : "text-[#8c8198]"}`}
-                  >
-                    N5
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => changeLevel("N4")}
-                    className={`rounded-full px-4 py-2 text-[10px] font-bold ${level === "N4" ? "bg-[#9333d8] text-white" : "text-[#8c8198]"}`}
-                  >
-                    N4
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => changeLevel("N3")}
-                    className={`rounded-full px-4 py-2 text-[10px] font-bold ${level === "N3" ? "bg-[#9333d8] text-white" : "text-[#8c8198]"}`}
-                  >
-                    N3
-                  </button>
+                  {(["N5", "N4", "N3", "N2", "N1"] as const).map((item) => (
+                    <button
+                      key={item}
+                      type="button"
+                      onClick={() => changeLevel(item)}
+                      aria-pressed={level === item}
+                      className={`rounded-full px-4 py-2 text-[10px] font-bold ${level === item ? "bg-[#9333d8] text-white" : "text-[#8c8198]"}`}
+                    >
+                      {item}
+                    </button>
+                  ))}
                 </div>
               </div>
               <div className="mb-6 flex gap-3 overflow-x-auto rounded-2xl border border-[#eee8f5] bg-white/70 p-2 pb-3 shadow-[0_8px_20px_-20px_#4b3568] [scrollbar-color:#d9a1c4_#f1edff] [scrollbar-width:thin] [&::-webkit-scrollbar]:h-1.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#d9a1c4] [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-[#f1edff]">
